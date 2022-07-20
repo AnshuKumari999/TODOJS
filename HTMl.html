@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TODO JS APP</title>
+     <link rel="icon" href="./todo.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+ <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+   <section class="old-page">
+     <h1 class="Task">TASK LIST</h1>
+     <span class="material-icons" id="add">add</span>
+     <span class="item">ADD ITEM</span>
+     <div class="flex-container">
+         
+     </div>
+   </section>
+
+    <section class="new-page">
+         <div class="arrow">
+            <span class="material-icons">arrow_back</span>
+         <span>BACK</span>
+         </div>
+    </section>
+    
+   <div class="root-popup">
+    <span class="headText">ADD NEW ITEMS </span>
+        <input type="text" id="head">
+         <button onclick="addCard()" class="add">Add</button>
+         <button class="cancel">Cancel</button>
+   </div>
+
+   <div class="new-popup">
+    <span class="headText">ADD NEW LIST</span>
+        <input type="text" id="head1">
+        <button onclick="addNewItem()" class="add">Add</button>
+        <button class="cancel">Cancel</button>
+   </div>
+    <script src="JS.js">
+    </script>
+</body>
+</html>

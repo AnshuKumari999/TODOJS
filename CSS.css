@@ -1,0 +1,118 @@
+*{
+    background-color: maroon;
+    
+}
+
+#add{
+    background-color: beige;
+    border:2px solid blue;
+    border-radius:50%;
+    position:absolute;
+    right:300px;
+    font-weight: 950;
+}
+.item{
+    position:absolute;
+    right:200px;
+    font-size: larger;
+    font-weight: 950;
+}
+.Task{
+    font-size: xx-large;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: brown ;
+    border:5px solid mediumaquamarine;
+    border-radius:15px;
+    text-align: center;
+    margin:15px;
+    height: 60vh ;
+    width: 20vw ;
+    padding: 20px;
+    position: relative;
+}
+.card > span {
+    position: absolute;
+    bottom: 10px; 
+    right: 20px;
+    font-size: 40px !important ;
+    border-radius: 50% ;
+    background-color:aquamarine ;
+    border:4px solid black;
+    cursor: pointer;
+    
+}
+.delete {
+    right: 80px !important
+}
+.new-page {
+    display:  none ;
+    position:absolute;
+    top:200px;
+    left:500px;
+}
+.arrow{
+    position:absolute;
+    top:-195px;
+    left:-400px;
+    
+}
+.root-popup, .new-popup {
+    position: absolute;
+    z-index: 5 ;
+    display: none;
+    flex-flow: column wrap ;
+    height: 20vh ;
+    width: 40vw ;
+    padding: 10px;
+    background-color: orchid ;
+    justify-content: space-between ;
+    left: calc( (100vw - 40vw) / 2) ;
+    top: calc( (100vh - 20vh)/ 2 ) ;
+    border-radius:25px;
+    border:4px solid black;
+    color:darkgreen;
+    box-shadow: 10px 10px black;
+
+    
+}
+.new-popup {
+    background-color:greenyellow ;
+}
+
+.root-popup>#head,.new-popup>#head1{
+    width:160px;
+    position:absolute;
+    left:180px;
+    top:40px;
+    color:darkseagreen;
+    
+}
+.headText{
+   text-align: center;
+}
+
+ .root-popup>.add,.new-popup>.add{
+    width:60px;
+    background-color: plum;
+    position:absolute;
+    top:90px;
+    left:180px;
+  
+}
+.root-popup >.cancel,.new-popup>.cancel{
+    width:60px;
+    background-color:pink;
+    position:absolute;
+    top:90px;
+    left:270px;
+    display:inline;
+  
+}
